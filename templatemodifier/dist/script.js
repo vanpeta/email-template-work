@@ -1,4 +1,4 @@
-// console.log("loaded")
+console.log("loaded")
 
 // var template = document.getElementById('template').href
 
@@ -28,5 +28,13 @@
 // }
 
 
-var template = _.template('hello <%= user %>!');
-template({user: 'Carlos'})
+// var template = _.template('hello <%= user %>!');
+// template({user: 'Carlos'})
+
+$('.button').click(function() {
+  console.log('clicked')
+  var content = $('.iframe').contents().find("#myContent");
+  content.text('goodbye world')
+  // content.text() = "Goodbie World";
+});
+
