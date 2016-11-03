@@ -3,21 +3,21 @@
   <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js"></script>
 </head>
 <body>
-  <form action=''>
-    Content
-    <input type="text">
-    <input type="submit" value="change">
+  <form id ="content" action='change'>
+    Title<br>
+    <input type="test" id="title" value="title"><br>
+    Content<br>
+    <input type="text" id="newValue" value="new content"><br>
+    Image<br>
+    <input type="text" id="newImage" value="url">
   </form>
-  <div class='change' style='cursor: pointer; padding: 2px; border: 1px solid #000000; background-color: #eee; display: inline;'>
-    Change
-  </div>
-  <div class='view' style='cursor: pointer; padding: 2px; border: 1px solid #000000; background-color: #eee; display: inline;'>
+  <div class='view' style='width: 50px; cursor: pointer; padding: 2px; border: 1px solid #000000; background-color: #eee; display: block; text-align: center;'>
     View
   </div>
-  <div id="guess">
-    <a id="new-template" href=""  download>download</a>
-  </div>
-  <iframe id="iframe" src="./New-Template-Guess-US-Default.html" width="600">
+  <iframe id="iframe" src="./New-Template-Guess-US-Default.html" width="600" height="900">
   </iframe>
+  <div id='download' style='width: 100px; cursor: pointer; padding: 2px; border: 1px solid #000000; background-color: #eee; display: block; text-align: center;'>
+    download
+  </div>
   <script src="../script.js" type="text/javascript" charset="utf-8"></script>
 </body>
