@@ -3,11 +3,21 @@
   <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js"></script>
 </head>
 <body>
-<div class='button' style='cursor: pointer; padding: 2px; border: 1px solid #000000; background-color: #eee; display: inline;'>Change</div>
-  <div id="guess">
-    <a id="template" href="New-Template-Guess-US-Default.html" download>template</a>
+  <form action=''>
+    Content
+    <input type="text">
+    <input type="submit" value="change">
+  </form>
+  <div class='change' style='cursor: pointer; padding: 2px; border: 1px solid #000000; background-color: #eee; display: inline;'>
+    Change
   </div>
-  <iframe class="iframe" src="./New-Template-Guess-US-Default.html" width="600">
+  <div class='view' style='cursor: pointer; padding: 2px; border: 1px solid #000000; background-color: #eee; display: inline;'>
+    View
+  </div>
+  <div id="guess">
+    <a id="new-template" href=""  download>download</a>
+  </div>
+  <iframe id="iframe" src="./New-Template-Guess-US-Default.html" width="600">
   </iframe>
   <script src="../script.js" type="text/javascript" charset="utf-8"></script>
 </body>

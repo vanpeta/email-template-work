@@ -31,10 +31,24 @@ console.log("loaded")
 // var template = _.template('hello <%= user %>!');
 // template({user: 'Carlos'})
 
-$('.button').click(function() {
-  console.log('clicked')
-  var content = $('.iframe').contents().find("#myContent");
-  content.text('goodbye world')
-  // content.text() = "Goodbie World";
+
+
+
+$('.change').click(function() {
+  var content = $('#iframe').contents().find("#myContent");
+  console.log('clicked');
+  console.log(content.text());
+  content.text('goodbye world');
 });
 
+$('.view').click(function(filename) {
+  var content = $('#iframe').contents().find("#myContent");
+  var fileName =  'tags.html'
+  console.log('clicked2')
+  var iframe = $('#iframe').contents().find('html');
+  var link = document.createElement("a");
+  link.setAttribute("download", filename);
+  link.setAttribute("href", "data:text/html;charset=utf-8,"+encodeURIComponent(iframe.prop('outerHTML')));
+  link.click();
+  console.log (iframe.prop('outerHTML'))
+});
