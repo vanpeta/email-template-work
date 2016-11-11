@@ -15,11 +15,17 @@
   @include outer-container(100%);
   form {
     @include span-columns(6);
-    @include font(15px);
+    label{
+      @include font(15px);
+      text-decoration: underline;
+    }
+    label > input[required="required"] {
+    background: red;
+    }
     input {
       @include span-columns(12);
       @include font(12px);
-      margin-bottom: 10px;
+      margin: 10px 0 10px 0;
       border: none;
       border-bottom: 1px solid black;
     }

@@ -19,12 +19,16 @@ html {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 48.82117%;
-    font-family: 'GuessFont','futura-pt',futura,'century gothic',centurygothic,Arial,Helvetica,sans-serif;
-    font-size: 15px;
-    letter-spacing: .15em; }
+    width: 48.82117%; }
     .console form:last-child {
       margin-right: 0; }
+    .console form label {
+      font-family: 'GuessFont','futura-pt',futura,'century gothic',centurygothic,Arial,Helvetica,sans-serif;
+      font-size: 15px;
+      letter-spacing: .15em;
+      text-decoration: underline; }
+    .console form label > input[required="required"] {
+      background: red; }
     .console form input {
       float: left;
       display: block;
@@ -33,7 +37,7 @@ html {
       font-family: 'GuessFont','futura-pt',futura,'century gothic',centurygothic,Arial,Helvetica,sans-serif;
       font-size: 12px;
       letter-spacing: .15em;
-      margin-bottom: 10px;
+      margin: 10px 0 10px 0;
       border: none;
       border-bottom: 1px solid black; }
       .console form input:last-child {

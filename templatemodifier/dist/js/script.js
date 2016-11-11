@@ -1,19 +1,25 @@
 console.log('loaded');
 
-var template
-var newConsole
+var template;
+var newConsole;
+var iframe;
 
 //navbar functionality
 $(document).ready(function () {
   $('.item').click(function(e){
     template = "-"+$(this).attr('id');
+    iframe = $('#iframe'+template).contents();
     newConsole = "console"+template;
     $('.console').hide();
     $('#' + newConsole).show();
     view();
-    $(':input').mouseover(function() {
-      var element = this.id
-      console.log(element)
+    var element;
+    $(':input').hover(function() {
+        element = this.id.split('-')[0];
+        console.log(element)
+        iframe.find('#'+element).addClass('active');
+    },function() {
+        iframe.find('#'+element).removeClass('active');
     });
     download();
   });
@@ -47,13 +53,12 @@ function view () {
     var price4 = $('#price4'+template).val();
 
     //Get iframes elements
-    var iframe = $('#iframe'+template).contents()
     var iframeHeader = iframe.find('#header');
     var iframeSubheader1 = iframe.find('#subheader1');
     var iframeSubheader2 = iframe.find('#subheader2');
-    var iframeMainImage = iframe.find('#main-image');
-    var iframeMainDescription = iframe.find('#main-descritpion');
-    var iframeMainPrice = iframe.find('#main-price');
+    var iframeMainImage = iframe.find('#mainimage');
+    var iframeMainDescription = iframe.find('#maindescritpion');
+    var iframeMainPrice = iframe.find('#mainprice');
     var iframeCTA = iframe.find('#CTA');
     var iframeHeader2 = iframe.find('#header2');
     var iframeImage1 = iframe.find('#image1');
