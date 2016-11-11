@@ -7,6 +7,86 @@ html {
 .hide {
   display: none; }
 
+.console {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto; }
+  .console::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .console form {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+    font-family: 'GuessFont','futura-pt',futura,'century gothic',centurygothic,Arial,Helvetica,sans-serif;
+    font-size: 15px;
+    letter-spacing: .15em; }
+    .console form:last-child {
+      margin-right: 0; }
+    .console form input {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%;
+      font-family: 'GuessFont','futura-pt',futura,'century gothic',centurygothic,Arial,Helvetica,sans-serif;
+      font-size: 12px;
+      letter-spacing: .15em;
+      margin-bottom: 10px;
+      border: none;
+      border-bottom: 1px solid black; }
+      .console form input:last-child {
+        margin-right: 0; }
+    .console form input:hover {
+      border-bottom-color: blue; }
+    .console form input:focus {
+      outline: none;
+      border-bottom-color: red; }
+    .console form .view {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 14.70196%;
+      margin-left: 42.64902%;
+      cursor: pointer;
+      padding: 2px;
+      border: 1px solid #000000;
+      background-color: #eee;
+      display: block;
+      text-align: center; }
+      .console form .view:last-child {
+        margin-right: 0; }
+  .console .iframe {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%; }
+    .console .iframe:last-child {
+      margin-right: 0; }
+    .console .iframe iframe {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%;
+      height: 90%; }
+      .console .iframe iframe:last-child {
+        margin-right: 0; }
+    .console .iframe .download {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 14.70196%;
+      margin-left: 42.64902%;
+      cursor: pointer;
+      padding: 2px;
+      border: 1px solid #000000;
+      background-color: #eee;
+      display: block;
+      text-align: center; }
+      .console .iframe .download:last-child {
+        margin-right: 0; }
+
 .centered-navigation {
   min-height: 60px;
   width: 100%;
@@ -66,13 +146,13 @@ html {
     width: 100%;
     z-index: 9999; }
     .centered-navigation ul li.nav-link a {
+      font-family: 'GuessFont','futura-pt',futura,'century gothic',centurygothic,Arial,Helvetica,sans-serif;
+      font-size: 12px;
+      letter-spacing: .15em;
       color: #000000;
       display: inline-block;
       outline: none;
-      text-decoration: none;
-      font-family: 'GuessFont','futura-pt',futura,'century gothic',centurygothic,Arial,Helvetica,sans-serif;
-      font-size: 12px;
-      letter-spacing: .15em; }
+      text-decoration: none; }
       .centered-navigation ul li.nav-link a:focus, .centered-navigation ul li.nav-link a:hover {
         text-decoration: underline; }
     @media screen and (min-width: 53.75em) {

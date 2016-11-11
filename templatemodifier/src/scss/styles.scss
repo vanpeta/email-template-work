@@ -2,8 +2,62 @@
 @import "grid-settings";
 @import "neat";
 
+@mixin font ($size) {
+  font-family: 'GuessFont','futura-pt',futura,'century gothic',centurygothic,Arial,Helvetica,sans-serif;
+  font-size: $size;
+  letter-spacing: .15em;
+}
+
 .hide {
   display: none;
+}
+.console {
+  @include outer-container(100%);
+  form {
+    @include span-columns(6);
+    @include font(15px);
+    input {
+      @include span-columns(12);
+      @include font(12px);
+      margin-bottom: 10px;
+      border: none;
+      border-bottom: 1px solid black;
+    }
+    input:hover {
+      border-bottom-color: blue;
+    }
+    input:focus {
+      outline: none;
+      border-bottom-color: red;
+    }
+    .view {
+      @include span-columns(2);
+      @include shift(5);
+      cursor: pointer;
+      padding: 2px;
+      border: 1px solid #000000;
+      background-color: #eee;
+      display: block;
+      text-align: center;
+    }
+  }
+  .iframe {
+    @include span-columns(6);
+    iframe {
+      @include span-columns(12);
+      height: 90%;
+    }
+    .download {
+      @include span-columns(2);
+      @include shift(5);
+      cursor: pointer;
+      padding: 2px;
+      border: 1px solid #000000;
+      background-color: #eee;
+      display: block;
+      text-align: center;
+    }
+  }
 }
 // .active {
 //   display: block !important;
@@ -130,13 +184,11 @@
     z-index: 9999;
 
     a {
+      @include font (12px);
       color: #000000;
       display: inline-block;
       outline: none;
       text-decoration: none;
-      font-family: 'GuessFont','futura-pt',futura,'century gothic',centurygothic,Arial,Helvetica,sans-serif;
-      font-size: 12px;
-      letter-spacing: .15em;
 
       &:focus,
       &:hover {

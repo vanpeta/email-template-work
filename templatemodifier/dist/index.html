@@ -1,152 +1,197 @@
-<head>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js"></script>
-  <link rel="stylesheet" href="../css/styles.css">
-</head>
-<body>
-<header class="centered-navigation" role="banner">
-  <div class="centered-navigation-wrapper">
-    <nav role="navigation">
-      <ul id="js-centered-navigation-menu" class="centered-navigation-menu show">
-        <li id="js-centered-more" class="nav-link more"><a href="javascript:void(0)">Guess</a>
-          <ul class="submenu">
-            <li><a class="item" id="guess-header-footer-us" href="#">Header-Footer US</a></li>
-            <li><a class="item" id="guess-header-footer-ca" href="#">Header-Footer CA</a></li>
-            <li><a class="item" id="guess-cart-abandon-1-us" href="#">Cart Abandon 1 US</a></li>
-          </ul>
-        </li>
-        <li id="js-centered-more" class="nav-link more"><a href="javascript:void(0)">Guess Factory</a>
-          <ul class="submenu">
-            <li><a class="item" id="GF-header-footer-us" href="javascript:void(0)">Header-Footer US</a></li>
-            <li><a class="item" id="GF-header-footer-ca" href="javascript:void(0)">Header-Footer CA</a></li>
-          </ul>
-        </li>
-        <li id="js-centered-more" class="nav-link more"><a href="javascript:void(0)">G by Guess</a>
-          <ul class="submenu">
-            <li><a class="item" href="javascript:void(0)">Item1</a></li>
-            <li><a class="item" href="javascript:void(0)">Item2</a></li>
-            <li><a class="item" href="javascript:void(0)">Item3</a></li>
-          </ul>
-        </li>
-        <li id="js-centered-more" class="nav-link more"><a href="javascript:void(0)">Guess Kids</a>
-          <ul class="submenu">
-            <li><a class="item" href="javascript:void(0)">Item1</a></li>
-            <li><a class="item" href="javascript:void(0)">Item2</a></li>
-            <li><a class="item" href="javascript:void(0)">Item3</a></li>
-          </ul>
-        </li>
-        <li id="js-centered-more" class="nav-link more"><a href="javascript:void(0)">Marciano</a>
-          <ul class="submenu">
-            <li><a class="item" href="javascript:void(0)">Item1</a></li>
-            <li><a class="item" href="javascript:void(0)">Item2</a></li>
-            <li><a class="item" href="javascript:void(0)">Item3</a></li>
-          </ul>
-        </li>
-      </ul>
-    </nav>
-  </div>
-</header>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js"></script>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel='shortcut icon' href='./assets/favicon.ico' type='image/x-icon'/ >
+  </head>
+  <body>
+  <header class="centered-navigation" role="banner">
+    <div class="centered-navigation-wrapper">
+      <nav role="navigation">
+        <ul id="js-centered-navigation-menu" class="centered-navigation-menu show">
+          <li id="js-centered-more" class="nav-link more"><a href="javascript:void(0)">Guess</a>
+            <ul class="submenu">
+              <li><a class="item" id="guess-header-footer-us" href="#">Header-Footer US</a></li>
+              <li><a class="item" id="guess-header-footer-ca" href="#">Header-Footer CA</a></li>
+              <li><a class="item" id="guess-cart-abandon-1-us" href="#">Cart Abandon 1 US</a></li>
+            </ul>
+          </li>
+          <li id="js-centered-more" class="nav-link more"><a href="javascript:void(0)">Guess Factory</a>
+            <ul class="submenu">
+              <li><a class="item" id="GF-header-footer-us" href="javascript:void(0)">Header-Footer US</a></li>
+              <li><a class="item" id="GF-header-footer-ca" href="javascript:void(0)">Header-Footer CA</a></li>
+            </ul>
+          </li>
+          <li id="js-centered-more" class="nav-link more"><a href="javascript:void(0)">G by Guess</a>
+            <ul class="submenu">
+              <li><a class="item" href="javascript:void(0)">Item1</a></li>
+              <li><a class="item" href="javascript:void(0)">Item2</a></li>
+              <li><a class="item" href="javascript:void(0)">Item3</a></li>
+            </ul>
+          </li>
+          <li id="js-centered-more" class="nav-link more"><a href="javascript:void(0)">Guess Kids</a>
+            <ul class="submenu">
+              <li><a class="item" href="javascript:void(0)">Item1</a></li>
+              <li><a class="item" href="javascript:void(0)">Item2</a></li>
+              <li><a class="item" href="javascript:void(0)">Item3</a></li>
+            </ul>
+          </li>
+          <li id="js-centered-more" class="nav-link more"><a href="javascript:void(0)">Marciano</a>
+            <ul class="submenu">
+              <li><a class="item" href="javascript:void(0)">Item1</a></li>
+              <li><a class="item" href="javascript:void(0)">Item2</a></li>
+              <li><a class="item" href="javascript:void(0)">Item3</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-  <section>
-<! -- GUESS Header footer US -->
-    <div class="console hide" id="console-guess-header-footer-us">
-      <form id ="content" action='change'>
-        Title<br>
-        <input type="test" id="title" value="title"><br>
-        Content<br>
-        <input type="text" id="newValue" value="new content"><br>
-        Image<br>
-        <input type="text" id="newImage" value="url">
-      </form>
-      <div class='view' style='width: 50px; cursor: pointer; padding: 2px; border: 1px solid #000000; background-color: #eee; display: block; text-align: center;'>
-        View
+  <section class="work-section">
+  <! -- GUESS Header footer US -->
+      <div class="console hide" id="console-guess-header-footer-us">
+        <form id ="content" action='change'>
+          Title<br>
+          <input type="test" id="title" value="title"><br>
+          Content<br>
+          <input type="text" id="newValue" value="new content"><br>
+          Image<br>
+          <input type="text" id="newImage" value="url">
+        </form>
+        <div class='view' style='width: 50px; cursor: pointer; padding: 2px; border: 1px solid #000000; background-color: #eee; display: block; text-align: center;'>
+          View
+        </div>
+        <div class="iframe">
+          <iframe id="iframe" src="./assets/Guess-header-footer-US.html" width="650" height="900">
+          </iframe>
+          <div id='download' style='width: 100px; cursor: pointer; padding: 2px; border: 1px solid #000000; background-color: #eee; display: block; text-align: center;'>
+            download
+          </div>
+        </div>
       </div>
-      <iframe id="iframe" src="../assets/Guess-header-footer-US.html" width="650" height="900">
-      </iframe>
-      <div id='download' style='width: 100px; cursor: pointer; padding: 2px; border: 1px solid #000000; background-color: #eee; display: block; text-align: center;'>
-        download
+  <! -- GUESS Header footer CA -->
+      <div class="console hide" id="console-guess-header-footer-ca">
+        <form id ="content" action='change'>
+          Title<br>
+          <input type="test" id="title" value="title"><br>
+          Content<br>
+          <input type="text" id="newValue" value="new content"><br>
+          Image<br>
+          <input type="text" id="newImage" value="url">
+        </form>
+        <div class='view' style='width: 50px; cursor: pointer; padding: 2px; border: 1px solid #000000; background-color: #eee; display: block; text-align: center;'>
+          View
+        </div>
+        <div class="iframe">
+          <iframe id="iframe" src="./assets/Guess-header-footer-CA.html" width="650" height="900">
+          </iframe>
+          <div id='download' style='width: 100px; cursor: pointer; padding: 2px; border: 1px solid #000000; background-color: #eee; display: block; text-align: center;'>
+            download
+          </div>
+        </div>
       </div>
-    </div>
-<! -- GUESS Header footer CA -->
-    <div class="console hide" id="console-guess-header-footer-ca">
-      <form id ="content" action='change'>
-        Title<br>
-        <input type="test" id="title" value="title"><br>
-        Content<br>
-        <input type="text" id="newValue" value="new content"><br>
-        Image<br>
-        <input type="text" id="newImage" value="url">
-      </form>
-      <div class='view' style='width: 50px; cursor: pointer; padding: 2px; border: 1px solid #000000; background-color: #eee; display: block; text-align: center;'>
-        View
+  <! -- GUESS Cart Abandon 1 US -->
+      <div class="console hide" id="console-guess-cart-abandon-1-us">
+        <form id ="-guess-cart-abandon-1-us" action='change'>
+          Title<br>
+          <input type="text" id="title-guess-cart-abandon-1-us" value="name of file to download"><br>
+          Header<br>
+          <input type="text" id="header-guess-cart-abandon-1-us" value=""><br>
+          Sub header line 1<br>
+          <input type="text" id="subheader1-guess-cart-abandon-1-us" value=""><br>
+          Sub header line 2<br>
+          <input type="text" id="subheader2-guess-cart-abandon-1-us" value=""><br>
+          Main Image<br>
+          <input type="text" id="mainimage-guess-cart-abandon-1-us" value=""><br>
+          Main Description<br>
+          <input type="text" id="maindescription-guess-cart-abandon-1-us" value=""><br>
+          Main price<br>
+          <input type='text' id="mainprice-guess-cart-abandon-1-us" value=""><br>
+          CTA<br>
+          <input type='text' id="CTA-guess-cart-abandon-1-us" value=""><br>
+          Header 2<br>
+          <input type='text' id="header2-guess-cart-abandon-1-us" value=""><br>
+          Image 1<br>
+          <input type='text' id="image1-guess-cart-abandon-1-us" value=""><br>
+          Descritption 1<br>
+          <input type='text' id="description1-guess-cart-abandon-1-us" value=""><br>
+          Price 1
+          <input type='text' id="price1-guess-cart-abandon-1-us" value=""><br>
+          Image 2<br>
+          <input type='text' id="image2-guess-cart-abandon-1-us" value=""><br>
+          Descritption 2<br>
+          <input type='text' id="description2-guess-cart-abandon-1-us" value=""><br>
+          Price 2
+          <input type='text' id="price2-guess-cart-abandon-1-us" value=""><br>
+          Image 3<br>
+          <input type='text' id="image3-guess-cart-abandon-1-us" value=""><br>
+          Descritption 3<br>
+          <input type='text' id="description3-guess-cart-abandon-1-us" value=""><br>
+          Price 3
+          <input type='text' id="price3-guess-cart-abandon-3-us" value=""><br>
+          Image 4<br>
+          <input type='text' id="image4-guess-cart-abandon-1-us" value=""><br>
+          Descritption 4<br>
+          <input type='text' id="description4-guess-cart-abandon-1-us" value=""><br>
+          Price 4
+          <input type='text' id="price4-guess-cart-abandon-1-us" value=""><br>
+          <div class="view" id='view-guess-cart-abandon-1-us'>
+          View
+        </div>
+        </form>
+        <div class="iframe">
+          <iframe id="iframe-guess-cart-abandon-1-us" src="./assets/Guess-cart-abandon-1-US.html">
+          </iframe>
+          <div class="download" id='download-guess-cart-abandon-1-us'>
+            download
+          </div>
+        </div>
       </div>
-      <iframe id="iframe" src="../assets/Guess-header-footer-CA.html" width="650" height="900">
-      </iframe>
-      <div id='download' style='width: 100px; cursor: pointer; padding: 2px; border: 1px solid #000000; background-color: #eee; display: block; text-align: center;'>
-        download
+  <! -- GF header footer US -->
+      <div class="console hide" id="console-GF-header-footer-us">
+        <form id ="content" action='change'>
+          Title<br>
+          <input type="test" id="title" value="title"><br>
+          Content<br>
+          <input type="text" id="newValue" value="new content"><br>
+          Image<br>
+          <input type="text" id="newImage" value="url">
+        </form>
+        <div class='view' style='width: 50px; cursor: pointer; padding: 2px; border: 1px solid #000000; background-color: #eee; display: block; text-align: center;'>
+          View
+        </div>
+        <div class="iframe">
+          <iframe id="iframe" src="./assets/GF-header-footer-US.html" width="650" height="900">
+          </iframe>
+          <div id='download' style='width: 100px; cursor: pointer; padding: 2px; border: 1px solid #000000; background-color: #eee; display: block; text-align: center;'>
+            download
+          </div>
+        </div>
       </div>
-    </div>
-<! -- GUESS Cart Abandon 1 US -->
-    <div class="console hide" id="console-guess-cart-abandon-1-us">
-      <form id ="-guess-cart-abandon-1-us" action='change'>
-        Title<br>
-        <input type="text" id="title-guess-cart-abandon-1-us" value="name of file to download"><br>
-        Header<br>
-        <input type="text" id="header-guess-cart-abandon-1-us" value="name of file to download"><br>
-        Subheader line 1<br>
-        <input type="text" id="sub-header1-guess-cart-abandon-1-us" value="These are still waiting for you"><br>
-        Subheader line 2<br>
-        <input type="text" id="sub-header2-guess-cart-abandon-1-us" value="These are still waiting for you"><br>
-        Main Image<br>
-        <input type="text" id="main-image-guess-cart-abandon-1-us" value="url">
-      </form>
-      <div id='view-guess-cart-abandon-1-us' style='width: 50px; cursor: pointer; padding: 2px; border: 1px solid #000000; background-color: #eee; display: block; text-align: center;'>
-        View
+  <! -- GF header footer CA -->
+      <div class="console hide" id="console-GF-header-footer-ca">
+        <form id ="content" action='change'>
+          Title<br>
+          <input type="test" id="title" value="title"><br>
+          Content<br>
+          <input type="text" id="newValue" value="new content"><br>
+          Image<br>
+          <input type="text" id="newImage" value="url">
+        </form>
+        <div class='view' style='width: 50px; cursor: pointer; padding: 2px; border: 1px solid #000000; background-color: #eee; display: block; text-align: center;'>
+          View
+        </div>
+        <iframe id="iframe" src="./assets/GF-header-footer-CA.html" width="650" height="900">
+        </iframe>
+        <div class="iframe">
+          <div id='download' style='width: 100px; cursor: pointer; padding: 2px; border: 1px solid #000000; background-color: #eee; display: block; text-align: center;'>
+            download
+          </div>
+        </div>
       </div>
-      <iframe id="iframe-guess-cart-abandon-1-us" src="../assets/Guess-cart-abandon-1-US.html" width="650" height="900">
-      </iframe>
-      <div id='download-guess-cart-abandon-1-us' style='width: 100px; cursor: pointer; padding: 2px; border: 1px solid #000000; background-color: #eee; display: block; text-align: center;'>
-        download
-      </div>
-    </div>
-<! -- GF header footer US -->
-    <div class="console hide" id="console-GF-header-footer-us">
-      <form id ="content" action='change'>
-        Title<br>
-        <input type="test" id="title" value="title"><br>
-        Content<br>
-        <input type="text" id="newValue" value="new content"><br>
-        Image<br>
-        <input type="text" id="newImage" value="url">
-      </form>
-      <div class='view' style='width: 50px; cursor: pointer; padding: 2px; border: 1px solid #000000; background-color: #eee; display: block; text-align: center;'>
-        View
-      </div>
-      <iframe id="iframe" src="../assets/GF-header-footer-US.html" width="650" height="900">
-      </iframe>
-      <div id='download' style='width: 100px; cursor: pointer; padding: 2px; border: 1px solid #000000; background-color: #eee; display: block; text-align: center;'>
-        download
-      </div>
-    </div>
-<! -- GF header footer CA -->
-    <div class="console hide" id="console-GF-header-footer-ca">
-      <form id ="content" action='change'>
-        Title<br>
-        <input type="test" id="title" value="title"><br>
-        Content<br>
-        <input type="text" id="newValue" value="new content"><br>
-        Image<br>
-        <input type="text" id="newImage" value="url">
-      </form>
-      <div class='view' style='width: 50px; cursor: pointer; padding: 2px; border: 1px solid #000000; background-color: #eee; display: block; text-align: center;'>
-        View
-      </div>
-      <iframe id="iframe" src="../assets/GF-header-footer-CA.html" width="650" height="900">
-      </iframe>
-      <div id='download' style='width: 100px; cursor: pointer; padding: 2px; border: 1px solid #000000; background-color: #eee; display: block; text-align: center;'>
-        download
-      </div>
-    </div>
-  </section>
-  <script src="../js/script.js" type="text/javascript" charset="utf-8"></script>
-</body>
+    </section>
+    <script src="./js/script.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+</html>
