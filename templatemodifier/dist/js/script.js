@@ -56,7 +56,7 @@ function view () {
     var iframeSubheader1 = iframe.find('#subheader1');
     var iframeSubheader2 = iframe.find('#subheader2');
     var iframeMainImage = iframe.find('#mainimage');
-    var iframeMainDescription = iframe.find('#maindescritpion');
+    var iframeMainDescription = iframe.find('#maindescription');
     var iframeMainPrice = iframe.find('#mainprice');
     var iframeCTA = iframe.find('#CTA');
     var iframeHeader2 = iframe.find('#header2');
