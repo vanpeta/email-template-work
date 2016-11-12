@@ -16,7 +16,6 @@ $(document).ready(function () {
     var element;
     $(':input').hover(function() {
         element = this.id.split('-')[0];
-        console.log(element)
         iframe.find('#'+element).addClass('active');
     },function() {
         iframe.find('#'+element).removeClass('active');
